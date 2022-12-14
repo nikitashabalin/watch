@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".SignInScreen"
+    tools:deviceIds="wear">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="E-mail"
+                android:textColor="#EF3A01"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/login_emailInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="35dp"
+                android:backgroundTint="#EF3A01"
+                android:ems="10"
+                android:hint="you@example.com"
+                android:inputType="textEmailAddress"
+                android:paddingTop="0dp"
+                android:paddingBottom="12dp"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="Пароль"
+                android:textColor="#EF3A01"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/login_passInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="35dp"
+                android:backgroundTint="#EF3A01"
+                android:ems="10"
+                android:hint="Ваш пароль"
+                android:inputType="textEmailAddress"
+                android:paddingTop="0dp"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:background="#EF3A01"
+                android:text="Войти"
+                android:textAllCaps="false"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.wear.widget.BoxInsetLayout>
